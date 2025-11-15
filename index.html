@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Melissa | Healthy Meal Prep & Lifestyle</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF7F9; /* Soft Pale Pink/Cream */
+            color: #333;
+        }
+        .header-bg {
+            background-color: #B22222; /* Use a deep red for contrast on the header/logo area */
+            background-image: url("https://placehold.co/1200x400/991b1b/ffffff?text=Chef+Melissa+Header+Background");
+            background-size: cover;
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(236, 72, 153, 0.2);
+        }
+        .pink-accent {
+            color: #db2777; /* Deep Pink */
+        }
+        .gold-accent {
+            background-color: #FBBF24; /* Amber 400 */
+        }
+        /* Custom style for the circular image */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #db2777; /* Deep Pink Border */
+            margin-top: -75px; /* Pull it up into the header area */
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Section (Brand Identity) -->
+    <header class="header-bg py-20 text-white shadow-xl">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-6xl font-extrabold tracking-tight mb-2 text-white drop-shadow-lg">
+                Chef Melissa
+            </h1>
+            <p class="text-xl font-light italic">Fast, Flavorful, Sustainable Eating</p>
+        </div>
+    </header>
+
+    <!-- Main Content: Intro and Product List -->
+    <main class="max-w-6xl mx-auto p-4 md:p-8 space-y-16">
+
+        <!-- About/Profile Section -->
+        <section class="text-center">
+            <div class="flex flex-col items-center">
+                <img 
+                    src="https://i.pinimg.com/280x280_RS/f7/bd/f2/f7bdf2d6b3ab3973be782f448b804bd3.jpg" 
+                    alt="Chef Melissa Profile Image" 
+                    class="profile-img"
+                    onerror="this.onerror=null; this.src='https://placehold.co/150x150/f0f9ff/db2777?text=Profile+Photo';"
+                >
+            </div>
+            <div class="mt-8 mb-16 max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Your Stress-Free Kitchen.</h2>
+                <p class="text-xl text-gray-600">
+                    I'm Chef Melissa, and I create simple, high-value resources dedicated to helping busy people eat healthy without spending hours in the kitchen. If you have **30 minutes**, you have time for a delicious, home-cooked meal. My goal is to make professional, healthy eating achievable for everyone.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section>
+            <h3 class="text-3xl font-bold text-gray-800 mb-8 border-b-2 border-pink-accent pb-2">Our Digital Cookbooks & Guides</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product 1: 30-Minute Meal Prep Bundle (LIVE) -->
+                <div class="card bg-white rounded-xl overflow-hidden">
+                    <img src="https://placehold.co/600x400/fecaca/881337?text=30+MINUTE+MEAL+PREP+BUNDLE" alt="30 Minute Meal Prep Cookbook Cover" class="w-full h-48 object-cover border-b-4 border-amber-400" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fecaca/881337?text=30+MINUTE+MEAL+PREP+BUNDLE';">
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-2xl font-bold pink-accent">1. 30-Minute Meal Prep Bundle</h4>
+                        <p class="text-gray-600 text-sm">
+                            The popular 50-recipe collection guaranteed ready in 30 minutes. Includes the Interactive Web Book and the Printable PDF.
+                        </p>
+                        <p class="font-extrabold text-xl">
+                             <span class="text-red-500 line-through text-lg">$9.99</span> $2.99 Launch Offer
+                        </p>
+                        <!-- Link uses the full, clean path -->
+                        <a href="/cookbook" class="gold-accent text-gray-900 font-bold py-3 px-4 rounded-lg w-full text-center block hover:bg-amber-500">
+                            View Sales Page &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Keto Quick Start (FUTURE) -->
+                <div class="card bg-white rounded-xl overflow-hidden opacity-80">
+                    <img src="https://placehold.co/600x400/f0f9ff/1d4ed8?text=KETO+QUICK+START+GUIDE" alt="Keto Quick Start Book" class="w-full h-48 object-cover border-b-4 border-gray-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/f0f9ff/1d4ed8?text=KETO+QUICK+START+GUIDE';">
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-2xl font-bold text-gray-500">2. The Keto Quick Start</h4>
+                        <p class="text-gray-500 text-sm">
+                            40 easy, low-carb recipes designed for beginners. Simple meals that require minimal ingredients.
+                        </p>
+                        <p class="font-extrabold text-xl text-gray-500">
+                            Available Q1 2026
+                        </p>
+                        <!-- Link uses the future path -->
+                        <a href="/cookbook2" disabled class="bg-gray-200 text-gray-600 font-bold py-3 px-4 rounded-lg w-full text-center block cursor-not-allowed">
+                            Join Waitlist
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: 5-Ingredient Dinners (FUTURE) -->
+                <div class="card bg-white rounded-xl overflow-hidden opacity-80">
+                    <img src="https://placehold.co/600x400/fefce8/ca8a04?text=5-INGREDIENT+RECIPES+GUIDE" alt="5-Ingredient Healthy Dinners Book" class="w-full h-48 object-cover border-b-4 border-gray-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fefce8/ca8a04?text=5-INGREDIENT+RECIPES+GUIDE';">
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-2xl font-bold text-gray-500">3. 5-Ingredient Dinners</h4>
+                        <p class="text-gray-500 text-sm">
+                            45 lightning-fast recipes using 5 ingredients or less, guaranteed ready in 15 minutes.
+                        </p>
+                        <p class="font-extrabold text-xl text-gray-500">
+                            Available Q2 2026
+                        </p>
+                        <!-- Link uses the future path -->
+                        <a href="/cookbook3" disabled class="bg-gray-200 text-gray-600 font-bold py-3 px-4 rounded-lg w-full text-center block cursor-not-allowed">
+                            Join Waitlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Footer -->
+        <section class="text-center py-10">
+            <p class="text-xl font-semibold text-gray-700">Follow Chef Melissa for daily quick recipe tips and inspiration.</p>
+            <!-- Placeholder for social media icons/links -->
+            <div class="mt-4 space-x-4 text-3xl">
+                <a href="#" class="pink-accent hover:text-pink-800">&#x1F4F7;</a> <!-- Instagram -->
+                <a href="https://pinterest.com/chefmelissa" class="pink-accent hover:text-pink-800">&#x1F4CD;</a> <!-- Pinterest -->
+                <a href="#" class="pink-accent hover:text-pink-800">&#x1F4E9;</a> <!-- Email List -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-100 text-center py-4 text-sm text-gray-500">
+        &copy; 2025 Chef Melissa.
+    </footer>
+
+</body>
+</html>
